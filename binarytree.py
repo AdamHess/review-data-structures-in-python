@@ -40,18 +40,11 @@ def inOrderTraversal(aNode):
 
 
 def testingBinaryTree() :
-	abt_node = BinaryTreeNode(value = 50)
-	insertNode(abt_node, 10)
-	insertNode(abt_node, 40)
-	insertNode(abt_node, 3)
-	insertNode(abt_node, 100)
-	insertNode(abt_node, 51)
-	insertNode(abt_node, 103)
-	insertNode(abt_node, 44)
-	insertNode(abt_node, 323)
-	insertNode(abt_node, 500)
-	insertNode(abt_node, 1)
-	inOrderTraversal(abt_node)
+	binarySearchTree = BinaryTreeNode(value = 70)
+	elementsForTree = [10,40,3,100,51,103,44,323,500,1, 225]
+	for val in elementsForTree:
+		insertNode(binarySearchTree, val)
+	inOrderTraversal(binarySearchTree)
 
 
 

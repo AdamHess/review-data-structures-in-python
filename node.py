@@ -18,16 +18,12 @@ def testLinkedList():
 	a = Node()
 	b = Node()
 	c = Node()
-
-
 	a.setValue(1)
 	a.setNext(b)
 	b.setValue(2)
 	b.setNext(c)
 	c.setValue(3)
-
 	aNode = a
-
 	while aNode != None:
 		print(aNode.getValue())
 		aNode = aNode.getNext()
